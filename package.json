@@ -6,7 +6,10 @@
   "repository": "https://github.com/wisedier/ICS-CERT",
   "author": "Junsang Cheon",
   "license": "MIT",
+  "homepage": "https://Lucas-Raza.github.io/ics-dashboard",
   "scripts": {
+    "predeploy": "npm run build",
++   "deploy": "gh-pages -d build",
     "start": "NODE_OPTIONS=--openssl-legacy-provider && react-scripts --openssl-legacy-provider",
     "build": "NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
     "eject": "react-scripts eject"
@@ -21,7 +24,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    
+    "gh-pages": "^4.0.0"
   },
   "dependencies": {
     "@nivo/bar": "^0.74.0",
